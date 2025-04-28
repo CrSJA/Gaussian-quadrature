@@ -1,0 +1,12 @@
+site_name: Gaussean Quadrature
+
+theme:
+  name: "material"
+
+plugins:
+  - mkdocstrings
+
+nav:
+  - Gaussian: index.md
+  - Introduction to the Problem: Introduction.md
+  - reference: reference.md
