@@ -257,6 +257,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#Gausian.Gausian_Cuadrature_0_Pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gausian_Cuadrature_0_Pi
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#Gausian.gaussxw" class="md-nav__link">
     <span class="md-ellipsis">
       gaussxw
@@ -266,9 +275,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#Gausian.gaussxwab" class="md-nav__link">
+    <span class="md-ellipsis">
+      gaussxwab
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#Gausian.integrable" class="md-nav__link">
     <span class="md-ellipsis">
       integrable
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#Gausian.main" class="md-nav__link">
+    <span class="md-ellipsis">
+      main
     </span>
   </a>
   
@@ -318,6 +345,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#Gausian.Gausian_Cuadrature_0_Pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gausian_Cuadrature_0_Pi
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#Gausian.gaussxw" class="md-nav__link">
     <span class="md-ellipsis">
       gaussxw
@@ -327,9 +363,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#Gausian.gaussxwab" class="md-nav__link">
+    <span class="md-ellipsis">
+      gaussxwab
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#Gausian.integrable" class="md-nav__link">
     <span class="md-ellipsis">
       integrable
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#Gausian.main" class="md-nav__link">
+    <span class="md-ellipsis">
+      main
     </span>
   </a>
   
@@ -382,6 +436,114 @@
 <div class="doc doc-object doc-function">
 
 
+<h2 id="Gausian.Gausian_Cuadrature_0_Pi" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">Gausian_Cuadrature_0_Pi</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>evaluates the integral of a funtion fom [0,pi] using the 
+gaussian cuadrature</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>N</code>
+            </td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>number of cuts use in the aproximation</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>f</code>
+            </td>
+            <td>
+                  <code><span title="PyFunction_Type">PyFunction_Type</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>funtion to be integrated</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+        <p>Returns: </p>
+<pre><code>a float that is the result of the integration
+</code></pre>
+
+
+            <details class="quote">
+              <summary>Source code in <code>Gausian.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">78</span>
+<span class="normal">79</span>
+<span class="normal">80</span>
+<span class="normal">81</span>
+<span class="normal">82</span>
+<span class="normal">83</span>
+<span class="normal">84</span>
+<span class="normal">85</span>
+<span class="normal">86</span>
+<span class="normal">87</span>
+<span class="normal">88</span>
+<span class="normal">89</span>
+<span class="normal">90</span>
+<span class="normal">91</span>
+<span class="normal">92</span>
+<span class="normal">93</span>
+<span class="normal">94</span>
+<span class="normal">95</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">Gausian_Cuadrature_0_Pi</span><span class="p">(</span><span class="n">N</span><span class="p">,</span><span class="n">f</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;evaluates the integral of a funtion fom [0,pi] using the </span>
+<span class="sd">    gaussian cuadrature</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        N (int): number of cuts use in the aproximation</span>
+<span class="sd">        f (PyFunction_Type): funtion to be integrated</span>
+
+<span class="sd">    Returns: </span>
+
+<span class="sd">        a float that is the result of the integration</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">PMP</span><span class="o">=</span><span class="n">gaussxw</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+    <span class="n">PMPE</span><span class="o">=</span><span class="n">gaussxwab</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span><span class="n">PMP</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">PMP</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+    <span class="k">return</span>  <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">PMPE</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">PMPE</span><span class="p">[</span><span class="mi">0</span><span class="p">])))</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
 <h2 id="Gausian.gaussxw" class="doc doc-heading">
             <code class="highlight language-python"><span class="n">gaussxw</span><span class="p">(</span><span class="n">N</span><span class="p">)</span></code>
 
@@ -391,7 +553,7 @@
     <div class="doc doc-contents ">
 
         <p>Calculates the zeros of Legendre polynomial and the weights on on the interval [-1,1]
-funtion created for encapsulation </p>
+funtion created for abstracion</p>
 
 
 <p><span class="doc-section-title">Parameters:</span></p>
@@ -424,7 +586,8 @@ funtion created for encapsulation </p>
       </tbody>
     </table>
         <p>Returns:</p>
-<pre><code>a dupel containig two np.arrays, the ceros of Legendre polynomial and the weights
+<pre><code>a dupel containig two np.arrays, the ceros of Legendre 
+polynomial and the weights
 example:
 
 (
@@ -459,7 +622,8 @@ array([0.34785485, 0.65214515, 0.65214515, 0.34785485])
 
             <details class="quote">
               <summary>Source code in <code>Gausian.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">30</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">29</span>
+<span class="normal">30</span>
 <span class="normal">31</span>
 <span class="normal">32</span>
 <span class="normal">33</span>
@@ -484,14 +648,15 @@ array([0.34785485, 0.65214515, 0.65214515, 0.34785485])
 <span class="normal">52</span>
 <span class="normal">53</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">gaussxw</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Calculates the zeros of Legendre polynomial and the weights on on the interval [-1,1]</span>
-<span class="sd">    funtion created for encapsulation </span>
+<span class="sd">    funtion created for abstracion</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        N (int): number of cuts of the aproximation</span>
 
 <span class="sd">    Returns:</span>
 
-<span class="sd">        a dupel containig two np.arrays, the ceros of Legendre polynomial and the weights</span>
+<span class="sd">        a dupel containig two np.arrays, the ceros of Legendre </span>
+<span class="sd">        polynomial and the weights</span>
 <span class="sd">        example:</span>
 
 <span class="sd">        (</span>
@@ -506,6 +671,160 @@ array([0.34785485, 0.65214515, 0.65214515, 0.34785485])
     <span class="n">x</span><span class="p">,</span> <span class="n">w</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polynomial</span><span class="o">.</span><span class="n">legendre</span><span class="o">.</span><span class="n">leggauss</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">x</span><span class="p">,</span> <span class="n">w</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="Gausian.gaussxwab" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">gaussxwab</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Re-escales the interval legendre polynomial</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>a</code>
+            </td>
+            <td>
+                  <code><span title="float">float</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>infirior limit of the new interval</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>b</code>
+            </td>
+            <td>
+                  <code><span title="float">float</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>upper limit of the new interval</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>x</code>
+            </td>
+            <td>
+                  <code><span title="numpy">numpy</span> - <span title="array">array</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>sampling points to be evaluated</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>w</code>
+            </td>
+            <td>
+                  <code><span title="numpy">numpy</span> - <span title="array">array</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>weights of the reiman sum</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+        <p>Returns:</p>
+<pre><code>a dupel containig two np.arrays, the ceros of Legendre 
+polynomial and the weights
+example:
+
+(
+array([-0.86113631, -0.33998104,  0.33998104,  0.86113631]),
+array([0.34785485, 0.65214515, 0.65214515, 0.34785485])
+)
+</code></pre>
+
+
+            <details class="quote">
+              <summary>Source code in <code>Gausian.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">gaussxwab</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Re-escales the interval legendre polynomial</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        a (float): infirior limit of the new interval</span>
+<span class="sd">        b (float): upper limit of the new interval</span>
+<span class="sd">        x (numpy-array): sampling points to be evaluated</span>
+<span class="sd">        w (numpy-array): weights of the reiman sum</span>
+
+<span class="sd">    Returns:</span>
+
+<span class="sd">        a dupel containig two np.arrays, the ceros of Legendre </span>
+<span class="sd">        polynomial and the weights</span>
+<span class="sd">        example:</span>
+
+<span class="sd">        (</span>
+<span class="sd">        array([-0.86113631, -0.33998104,  0.33998104,  0.86113631]),</span>
+<span class="sd">        array([0.34785485, 0.65214515, 0.65214515, 0.34785485])</span>
+<span class="sd">        )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">b</span> <span class="o">-</span> <span class="n">a</span><span class="p">)</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">b</span> <span class="o">+</span> <span class="n">a</span><span class="p">),</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">b</span> <span class="o">-</span> <span class="n">a</span><span class="p">)</span> <span class="o">*</span> <span class="n">w</span>
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -569,7 +888,8 @@ prints:
 
             <details class="quote">
               <summary>Source code in <code>Gausian.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 6</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 5</span>
+<span class="normal"> 6</span>
 <span class="normal"> 7</span>
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
@@ -590,8 +910,7 @@ prints:
 <span class="normal">24</span>
 <span class="normal">25</span>
 <span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">integrable</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="normal">27</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">integrable</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Funtion to be integrated</span>
 
 
@@ -614,6 +933,54 @@ prints:
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="Gausian.main" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">main</span><span class="p">()</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>main funtion,
+evaluates the integral of our functon and graphs the results</p>
+
+
+            <details class="quote">
+              <summary>Source code in <code>Gausian.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;main funtion,</span>
+<span class="sd">    evaluates the integral of our functon and graphs the results</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+
+    <span class="n">x_axis</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">y_axis</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x_axis</span><span class="p">)):</span> <span class="c1"># esto parece ser inivitable</span>
+        <span class="n">y_axis</span><span class="p">[</span><span class="n">a</span><span class="p">]</span><span class="o">=</span><span class="n">Gausian_Cuadrature_0_Pi</span><span class="p">(</span><span class="n">x_axis</span><span class="p">[</span><span class="n">a</span><span class="p">],</span><span class="n">integrable</span> <span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">y_axis</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_axis</span><span class="p">,</span><span class="n">y_axis</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
