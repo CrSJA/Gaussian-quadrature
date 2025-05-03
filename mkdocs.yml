@@ -5,8 +5,15 @@ theme:
 
 plugins:
   - mkdocstrings
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+markdown_extensions:
+  - mdx_math
+
+
 
 nav:
-  - Gaussian: index.md
-  - Introduction to the Problem: Introduction.md
+  - index.md
+  - explanation: explanation.md
   - reference: reference.md
+  - tutorial: tutorials.md

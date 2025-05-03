@@ -1,19 +1,15 @@
-# Welcome to MkDocs
+# Gaussian cuadrature
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+The problem to be solve is to aproximate the integral 
 
-## Commands
+$$\int _{0}^{\pi} \sin(x^2) dx$$
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Using the Gauusian Cuadrature, this is of particular importace because this integral does not have an analytic solution.
 
-## Project layout
+It is also a requaired the creation of a grahp that shows the aproximations on the Y axis and the number of cuts of the aproxiamtion on the x axis
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
 
+for more information on the methot visit: [explanation](explanation.md)
+
+for documentation on the code visit [reference](reference.md)
 

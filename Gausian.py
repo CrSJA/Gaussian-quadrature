@@ -10,16 +10,17 @@ def integrable(x):
     Args:
         x (float): any real numbre
 
-    Returns:
-
-        retuns the sin(x^2) of a np.array or a float depending on the imput
-        
-        example:
+    example:
         x=np.array([-0.86113631, -0.33998104,  0.33998104,  0.86113631])
         print(integrable(x))
         
         prints:
         [0.67543596 0.1153299  0.1153299  0.67543596]    
+    
+    Returns:
+
+        retuns the sin(x^2) of a np.array or a float depending on the imput
+        
 
         
 
@@ -35,7 +36,7 @@ def gaussxw(N):
         
     Returns:
 
-        a dupel containig two np.arrays, the ceros of Legendre 
+        (dupel) containig two np.arrays, the ceros of Legendre 
         polynomial and the weights
         example:
 
@@ -85,7 +86,7 @@ def Gausian_Cuadrature_0_Pi(N,f):
 
     Returns: 
         
-        a float that is the result of the integration
+        (float) that is the result of the integration
 
     """
 
