@@ -20,7 +20,7 @@
     
     
       
-        <title>Introduction to the Problem - Gaussean Quadrature</title>
+        <title>explanation - Gaussean Quadrature</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nothing-for-now" class="md-skip">
+        <a href="#explanation-of-the-method" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction to the Problem
+              explanation
             
           </span>
         </div>
@@ -161,7 +161,7 @@
   
   
   <span class="md-ellipsis">
-    Gaussian
+    Gaussian cuadrature
     
   </span>
   
@@ -192,7 +192,7 @@
   
   
   <span class="md-ellipsis">
-    Introduction to the Problem
+    explanation
     
   </span>
   
@@ -216,6 +216,28 @@
   
   <span class="md-ellipsis">
     reference
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    tutorial
     
   </span>
   
@@ -259,8 +281,36 @@
 
 
 
-<h1 id="nothing-for-now">nothing for now</h1>
-<p>hola mundo</p>
+<h1 id="explanation-of-the-method">Explanation of the method</h1>
+<p>The Gaussian Cuadrature is based on the Rieman Sum</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{align}
+\int_a^b {\rm{d}}x f(x) \approx \sum_{k=1}^{N} w_k f(x_k).
+\end{align}
+</script>
+</p>
+<p>the key idea is that tere is information to be obtiain by chosing the <em>w</em> and <em>x</em>, in general they don't have to be homogeniusly distributed and it is posible to obtain a beter aproximation. A particularly interesting result is that tere is a rule to obtain the <em>x</em> and <em>w</em>.</p>
+<p>the rule is as folows:</p>
+<p>let the legendre be</p>
+<p>
+<script type="math/tex; mode=display">
+\forall (M, N) \in\mathbb N^2, \quad \int_{-1}^1 {\rm{d}}x P_N(x)P_M(x) = \frac{2\delta_{MN}}{2N+1}
+</script>
+</p>
+<p>then the <em>x</em> are the zeros of the polynomials and the <em>w</em> are choseen in the folowing way:</p>
+<p>
+<script type="math/tex; mode=display">w_k = \left[\frac{2}{1-x^2}\left(\frac{dP_N}{dx}\right)^{-2}\right]_{x={x_k}}</script>
+</p>
+<p>note that this polynomial are only define in the interval [-1,1] but it is posible to escalate the <em>x_k</em> and the <em>w_k</em> to any interval by using the procedure:</p>
+<p>
+<script type="math/tex; mode=display">x=0.5  (b - a) \cdot x + 0.5  (b + a)</script>
+</p>
+<p>
+<script type="math/tex; mode=display">w=0.5 * (b - a) * w</script>
+</p>
+<p>were the <em>x</em> and <em>y</em> on the right of the equation haven't been scalated and [a,b] is the new interval</p>
+<p>that in essence is the methot for solving the integral, for more information regarding the implementation visit <a href="../reference/">reference</a></p>
 
 
 
@@ -313,6 +363,8 @@
     
     
       <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
     
   </body>

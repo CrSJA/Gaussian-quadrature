@@ -9,20 +9,20 @@
       
       
       
+        <link rel="prev" href="../reference/">
       
-        <link rel="next" href="explanation/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
-        <title>Gaussean Quadrature</title>
+        <title>tutorial - Gaussean Quadrature</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2afb09e1.min.css">
       
       
 
@@ -41,9 +41,9 @@
       
     
     
-      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gaussian-cuadrature" class="md-skip">
+        <a href="#use-examples" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Gaussean Quadrature" class="md-header__button md-logo" aria-label="Gaussean Quadrature" data-md-component="logo">
+    <a href=".." title="Gaussean Quadrature" class="md-header__button md-logo" aria-label="Gaussean Quadrature" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Gaussian cuadrature
+              tutorial
             
           </span>
         </div>
@@ -136,7 +136,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Gaussean Quadrature" class="md-nav__button md-logo" aria-label="Gaussean Quadrature" data-md-component="logo">
+    <a href=".." title="Gaussean Quadrature" class="md-nav__button md-logo" aria-label="Gaussean Quadrature" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -151,19 +151,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -174,7 +165,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -186,7 +176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="explanation/" class="md-nav__link">
+      <a href="../explanation/" class="md-nav__link">
         
   
   
@@ -208,7 +198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/" class="md-nav__link">
+      <a href="../reference/" class="md-nav__link">
         
   
   
@@ -227,10 +217,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="tutorials/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    tutorial
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -241,6 +253,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gaussxw" class="md-nav__link">
+    <span class="md-ellipsis">
+      gaussxw()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gaussxwab" class="md-nav__link">
+    <span class="md-ellipsis">
+      gaussxwab()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gausian_cuadrature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gausian_Cuadrature
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      graph
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -265,6 +333,50 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gaussxw" class="md-nav__link">
+    <span class="md-ellipsis">
+      gaussxw()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gaussxwab" class="md-nav__link">
+    <span class="md-ellipsis">
+      gaussxwab()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gausian_cuadrature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gausian_Cuadrature
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      graph
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -279,15 +391,54 @@
 
 
 
-<h1 id="gaussian-cuadrature">Gaussian cuadrature</h1>
-<p>The problem to be solve is to aproximate the integral </p>
+<h1 id="use-examples">Use examples</h1>
+<h2 id="gaussxw">gaussxw()</h2>
+<p>code</p>
+<pre><code class="language-python">print(gaussxw(5))
+</code></pre>
+<p>results:</p>
+<pre><code class="language-python">(array([-0.90617985, -0.53846931,  0. ,  0.53846931,  0.90617985]),
+array([0.23692689, 0.47862867, 0.56888889, 0.47862867, 0.23692689]))
+</code></pre>
+<h2 id="gaussxwab">gaussxwab()</h2>
+<p>code:</p>
+<pre><code class="language-python">a = gaussxw(5)
+b = gaussxwab(3,7,a[0],a[1])
+
+print(b)
+</code></pre>
+<p>results:</p>
+<pre><code class="language-python">(
+array([3.18764031, 3.92306138, 5. , 6.07693862, 6.81235969]),
+array([0.47385377, 0.95725734, 1.13777778, 0.95725734, 0.47385377])
+)
+</code></pre>
+<h2 id="gausian_cuadrature">Gausian_Cuadrature</h2>
+<p>lets say we want to aproximate the integral</p>
 <p>
-<script type="math/tex; mode=display">\int _{0}^{\pi} \sin(x^2) dx</script>
+<script type="math/tex; mode=display">
+\int _0 ^1 xdx
+</script>
 </p>
-<p>Using the Gauusian Cuadrature, this is of particular importace because this integral does not have an analytic solution.</p>
-<p>It is also a requaired the creation of a grahp that shows the aproximations on the Y axis and the number of cuts of the aproxiamtion on the x axis</p>
-<p>for more information on the methot visit: <a href="explanation/">explanation</a></p>
-<p>for documentation on the code visit <a href="reference/">reference</a></p>
+<p>using 5 partiotions </p>
+<pre><code class="language-python">print(Gausian_Cuadrature(5,lambda x: x,0,1))
+</code></pre>
+<h2 id="graph">graph</h2>
+<p>if we want to use this to make a graph we need to use matplotlib</p>
+<p>an example on how is the main function presented here</p>
+<pre><code class="language-python">def main():
+
+    x_axis=np.arange(1,21,1)
+    y_axis=np.zeros(20)
+
+    for a in range(len(x_axis)): # esto parece ser inivitable
+        y_axis[a]=Gausian_Cuadrature(x_axis[a],integrable,0,np.pi )
+
+
+    plt.plot(x_axis,y_axis)
+
+
+</code></pre>
 
 
 
@@ -336,10 +487,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
